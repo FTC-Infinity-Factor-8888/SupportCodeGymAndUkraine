@@ -19,13 +19,6 @@
             .orange {
                 color: orange;
             }
-            .container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 500px;
-                background-color: aliceblue;
-            }
             html,body { 
                 height: 100%;
             }
@@ -39,7 +32,8 @@
             }
             .child {
                 background-color: aliceblue;
-                width: 1000px;
+                max-width: 900px;
+                min-width: none;
                 height: auto;
                 padding-left: 2.5%;
                 padding-right: 2.5%;
@@ -50,8 +44,11 @@
                 float: right;
             }
             .center {
-                float: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
+            
         </style>
     </head>
     <body>
@@ -85,8 +82,8 @@
                 </ul>
                 
                 <br>
-                <img class="right" src="Subscription.png" width="1000">
                 <h2 id="codegym">Information about CodeGym</h2>
+                <img class="center" src="Subscription.png" width="90%">
                 <h3>A Message from CodeGym</h3>
                 <p>
                     CodeGym is an online gamified course for learning Java programming from scratch. 
@@ -113,7 +110,7 @@
 
                 <br>
                 <h2 id="donate">Donate to Ukraine</h2>
-                <img class="center" src="donate.jpg" width="1000px">
+                <img class="center" src="donate.jpg" width="90%">
                 <h3>Donate Today!</h3>
                 <p>
                     During these times of struggle in Ukraine, one of the best ways that we can help, 
