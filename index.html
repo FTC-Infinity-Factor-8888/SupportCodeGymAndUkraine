@@ -10,25 +10,164 @@
             * {
                 font-family: Reffort-Regular, Arial, Helvetica, sans-serif;
             }
+            .center {
+                text-align: center;
+            }
+            .uBlue {
+                color: rgb(35, 133, 245);
+            }
+            .orange {
+                color: orange;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 500px;
+                background-color: aliceblue;
+            }
+            html,body { 
+                height: 100%;
+            }
+            .parent {
+                height: auto;
+                width: auto;
+                background: rgb(35, 133, 245);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .child {
+                background-color: aliceblue;
+                width: 1000px;
+                height: auto;
+                padding-left: 2.5%;
+                padding-right: 2.5%;
+                padding-bottom: 4%;
+                align-self: flex-start;
+            }
+            .right {
+                float: right;
+            }
+            .center {
+                float: center;
+            }
         </style>
     </head>
     <body>
-        <h1>Support Ukraine and CodeGym!</h1>
+        <div class="parent">
+            <div class="child">
+                <h1 class="center">Support <span class="uBlue">Ukraine</span> and Code<span class="orange">Gym</span>!</h1>
 
-        <h2>Information about Ukraine</h2>
-        <p>
-            Recently, Russia has unjustly invaded Ukraine and caused mass destruction in civilian areas. 
-            Below, please find reliable sources of information about the situation in Ukraine and how to donate to support Ukraine.
-        </p><br>
-        <p>The Official Website of Ukraine: <a href="https://war.ukraine.ua/">https://war.ukraine.ua/</a></p>
-        <p>True Experiences of the Ukrainian Citizens: <a href="https://www.warstoriesukraine.com/">https://www.warstoriesukraine.com/</a></p>
-        <p>the whole scope of information about the war and Ukraine in general: <a href="https://ukrainer.net/en/">https://ukrainer.net/en/</a></p>
-        <br>
-        <p>News Portals:</p>
-        <ul>
-            <li><a href="https://english.nv.ua/">https://english.nv.ua/</a></li>
-            <li><a href="https://www.pravda.com.ua/eng/">https://www.pravda.com.ua/eng/</a></li>
-        </ul>
-        <h2>Information about CodeGym</h2>
+                <h2>Table of Contents</h2>
+                <ol>
+                    <li><a href="#ukraine">Information about Ukraine</a></li>
+                    <li><a href="#codegym">CodeGym</a></li>
+                    <li><a href="#donate">Donate to Ukraine</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ol>
+                
+                <br>
+                <h2 id="ukraine">Information about Ukraine</h2>
+                <p>
+                    Recently, Russia has unjustly invaded Ukraine and caused mass destruction in civilian areas. 
+                    Below, please find reliable sources of information about the situation in Ukraine and how to donate to support Ukraine.
+                </p><br>
+                <img class="right" src="UkraineDove.png" width="250px" height="250px">
+                <p>The Official Website of Ukraine: <a href="https://war.ukraine.ua/">https://war.ukraine.ua/</a></p>
+                <p>True Experiences of the Ukrainian Citizens: <a href="https://www.warstoriesukraine.com/">https://www.warstoriesukraine.com/</a></p>
+                <p>the whole scope of information about the war and Ukraine in general: <a href="https://ukrainer.net/en/">https://ukrainer.net/en/</a></p>
+                <br>
+                <p>News Portals:</p>
+                <ul>
+                    <li><a href="https://english.nv.ua/">https://english.nv.ua/</a></li>
+                    <li><a href="https://www.pravda.com.ua/eng/">https://www.pravda.com.ua/eng/</a></li>
+                </ul>
+                
+                <br>
+                <img class="right" src="Subscription.png" width="1000">
+                <h2 id="codegym">Information about CodeGym</h2>
+                <h3>A Message from CodeGym</h3>
+                <p>
+                    CodeGym is an online gamified course for learning Java programming from scratch. 
+                    This course is a perfect way to master Java for beginners. 
+                    It contains 1200+ tasks with instant verification and an essential scope of Java fundamentals theory. 
+                    To help you succeed in education, we've implemented a set of motivational features, quizzes, coding projects, 
+                    a games section, content about efficient learning and Java developer's career as well as compelling teaching techniques — 
+                    visualization, storytelling, games, etc., to make learning more effective and fun.
+                </p>
+                <h3>How CodeGym Helped Us</h3>
+                <p>
+                    CodeGym has helped us, Infinity Factor, since we reestablished our team in 2020 from square one. In the short two seasons that we've played, 
+                    CodeGym has brought our team's knowledge of Java from zero, to being able to win awards at the State Championship. 
+                    Despite being based in Kyiv, Ukraine, CodeGym has continued to help us through their own struggles. 
+                    The support that we have received form CodeGym truly means a lot to us.
+                    Join CodeGym today, and learn Java from scratch, or develop your existing skills in a unique, and interactive way.
+                </p>
+                <h3>A Special Offer for FIRST Community</h3>
+                <p>
+                    CodeGym helped our team through their program, and we would like to spread the CodeGym experience to the FIRST Community.
+                    After consulting with Codegym, they were more than happy to provide us with a promotion discount to share with the community.
+                    For a limited time only, use the <strong>Promotion Code: TIF2023</strong>. Take advantage of the offer now, and unlock one of the best ways to learn Java!
+                </p>
+
+                <br>
+                <h2 id="donate">Donate to Ukraine</h2>
+                <img class="center" src="donate.jpg" width="1000px">
+                <h3>Donate Today!</h3>
+                <p>
+                    During these times of struggle in Ukraine, one of the best ways that we can help, 
+                    is by supporting the civilians in Ukraine by sending whatever donations we can to help provide for the appropriate facilities needed to keep everyone safe. <br>
+
+                    You can donate to ukraine with this link directly through the Ministry of International Affairs of Ukraine: <a href="https://war.ukraine.ua/donate/">https://war.ukraine.ua/donate/</a>
+                    <ul>
+                        <li>Prostir</li>
+                        <li>Mastercard</li>
+                        <li>Visa</li>
+                        <li>PayPal</li>
+                        <li>Bank Transfer (USD, UAH, EUR)</li>
+                        <li>Or through any Cryptocurrency</li>
+                    </ul>
+                </p>
+                <br>
+
+                <h3>Categories of Donation:</h3>
+                <ul>
+                    <li>Defence and Demining</li>
+                    <li>Medical Aid</li>
+                    <li>Rebuild Ukraine</li>
+                </ul>
+
+                <h3>Private Ukrainian Charitable Foundations (Credited by the MIAU)</h3>
+                <ul>
+                    <li>Come back alive</li>
+                    <ul>
+                        <li>Launched in 2014, Come Back Alive became the most prominent organization providing support to the Armed Forces of Ukraine. The fund’s mission is limited to supplying technology, trainings, and accouterments to help save lives of Ukrainians and help our warriors defend Ukraine.</li>
+                    </ul>
+                    <li>Serhii Prytula Charitable Foundation</li>
+                        <ul>
+                            <li>Serhii Prytula has been helping the Ukrainian Army as a private volunteer since Russia occupied Crimea and Donbas in 2014. His foundation procures equipment, supplies, medical supplies, and vehicles for the military. Another area of work is humanitarian aid.</li>
+                        </ul>
+                    <li>The Hospitallers Battalion</li>
+                    <ul>
+                        <li>The Hospitallers Battalion is a voluntary organization of paramedics founded at the beginning of hostilities in Ukraine in 2014. Donations for the battalion are spent on medicines and medical supplies for wounded Ukrainian defenders.</li>
+                    </ul>
+                    <li>Razom Emergency response</li>
+                    <ul>
+                        <li>This project provides urgent help and support in the face of an extreme or unforeseen situation in Ukraine. Razom initiative delivers tactical medicine items, hospital supplies, tech-enabled emergency, and humanitarian aid.</li>
+                    </ul>
+                    <li>Nova Ukraine</li>
+                    <ul>
+                        <li>Nova Ukraine is a nonprofit organization dedicated to providing humanitarian aid to Ukraine and raising awareness about Ukraine in the United States as well as in the rest of the world. Through donations, they fund a variety of efforts to help the people of Ukraine and to strengthen Ukraine’s democratic society.</li>
+                    </ul>
+                </ul>
+                <br>
+                <h3>Beware of fake fundraisers!</h3>
+                <p><em>Public Service Announcement from the MIAU:</em> The Russian government and other potential criminals are trying to disrupt fundraising efforts by creating fake campaigns. Please trust <strong>ONLY</strong> the resources listed here and double-check the URLs! </p>
+                <br><br>
+                <h2 id="contact">Contact information</h2>
+                <p>If you have nay questions about the information provided here, Ukraine, CodeGym, or are in need of general FTC guidance, you can contact us at <a href="mailto:team8888.main@gmail.com?subject=Question from Ukraine Flyer">Team8888.main@gmail.com</a> and we will do our best to help you!</p>
+            </div>
+        </div>
     </body>
 </html>
